@@ -8,10 +8,12 @@
     <!-- print input content -->
     <div class="container"></div>
 */
+console.log("hola");
 
 const myInput = document.querySelector(".myInput");
 const printButton = document.querySelector(".printButton");
+const container = document.querySelector(".container");
 
 printButton.addEventListener("click", function () {
-  console.log("click");
+  container.innerHTML = `<h1>${myInput.value}</h1>`;
 });
