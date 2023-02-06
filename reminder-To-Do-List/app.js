@@ -8,3 +8,10 @@
     <!-- print input content -->
     <div class="container"></div>
 */
+
+const myInput = document.querySelector(".myInput");
+const printButton = document.querySelector(".printButton");
+
+printButton.addEventListener("click", function () {
+  console.log("click");
+});
