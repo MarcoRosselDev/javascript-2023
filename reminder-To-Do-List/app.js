@@ -11,15 +11,6 @@ let save = [];
 
 // preguntar si existe un local Storage
 const areLocal = JSON.parse(localStorage.getItem("example"));
-console.log(areLocal);
-
-printButton.addEventListener("click", () => {
-  save.push(myInput.value);
-  myInput.value = ""; // clean te input to write another task
-  window.localStorage.setItem("example", JSON.stringify(save));
-  // a la vuelta preguntar si existe un local storage entonces aplicar la funcion printDOM()
-  printDOM();
-});
 
 const printDOM = () => {
   // iterate for the save object to not manipulate the DOM all time and just manipulated it one time in the end.
@@ -31,8 +22,27 @@ const printDOM = () => {
   container.innerHTML = printEND;
 };
 
+printButton.addEventListener("click", () => {
+  save.push(myInput.value);
+  myInput.value = ""; // clean te input to write another task
+  window.localStorage.setItem("example", JSON.stringify(save));
+  // a la vuelta preguntar si existe un local storage entonces aplicar la funcion printDOM()
+  printDOM();
+});
+
 if (areLocal) {
   save = areLocal;
-  console.log(save);
   printDOM();
 }
+
+deleteButton.addEventListener("click", () => {
+  areLocal.pop();
+  window.localStorage.setItem("example", JSON.stringify(save));
+  printDOM();
+});
+
+deleteAllButton.addEventListener("click", () => {
+  save = [];
+  window.localStorage.setItem("example", JSON.stringify(save));
+  printDOM();
+});
