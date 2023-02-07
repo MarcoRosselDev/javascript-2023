@@ -12,6 +12,8 @@ let save = [];
 printButton.addEventListener("click", () => {
   save.push(myInput.value);
   myInput.value = ""; // clean te input to write another task
+  window.localStorage.setItem("example", JSON.stringify(save));
+  // a la vuelta preguntar si existe un local storage entonces aplicar la funcion printDOM()
   printDOM();
 });
 
