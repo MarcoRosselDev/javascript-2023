@@ -1,26 +1,30 @@
 // Ejercicio 12: comportamiento del alcance o contexto funcional.
 
-function function1() {
-  var a = 2;
+function asd(arr) {
+  var a = arr;
 
-  function function2() {
-    var b = 5;
+  function funcion3() {
+    var b = 7;
 
-    function function5() {
-      console.log(a, b);
+    function funcion5() {
+      console.log(a + b);
     }
+    funcion5();
   }
+  funcion3();
+  // console.log(a);
 }
+console.log("hola");
 
-function function2() {
+function afs() {
   var a = 7;
 
-  function function4() {
+  function funcion4() {
     console.log(a);
   }
 }
 
 // console.log(a);
 
-function1();
-function2();
+asd(7);
+afs();
