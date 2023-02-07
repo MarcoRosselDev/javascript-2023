@@ -11,9 +11,13 @@
 console.log("hola");
 
 const myInput = document.querySelector(".myInput");
+const ipt = document.querySelector(".ipt");
+
 const printButton = document.querySelector(".printButton");
 const container = document.querySelector(".container");
 
-printButton.addEventListener("click", function () {
-  container.innerHTML = `<h1>${myInput.value}</h1>`;
+console.log(printButton);
+
+printButton.addEventListener("click", () => {
+  return (container.innerHTML = `<h1>${myInput.value}</h1>`);
 });
