@@ -9,6 +9,10 @@ const container = document.querySelector(".container");
 // push on array object to save on localStorage
 let save = [];
 
+// preguntar si existe un local Storage
+const areLocal = JSON.parse(localStorage.getItem("example"));
+console.log(areLocal);
+
 printButton.addEventListener("click", () => {
   save.push(myInput.value);
   myInput.value = ""; // clean te input to write another task
@@ -26,3 +30,9 @@ const printDOM = () => {
 
   container.innerHTML = printEND;
 };
+
+if (areLocal) {
+  save = areLocal;
+  console.log(save);
+  printDOM();
+}
