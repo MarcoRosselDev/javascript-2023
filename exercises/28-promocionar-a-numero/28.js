@@ -25,3 +25,5 @@ const fu1 = () => {};
 console.log(Number("")); // 0
 console.log(Number("hola")); // NaN
 console.log(Number(fu1)); // NaN
+console.log(Number("123999")); // 123999 ---> en resumen se puede promocionar a numero los strings que tengan solo numeros
+// en caso de un error como una letra entre medio, fracasara el parceo y quedara como NaN
