@@ -1,10 +1,11 @@
 //
 // ejercicio 21 : Uso de operadores realcionales.
 
-// <. <=, >, >=, ==, ===
+// <. <=, >, >=, ==, ===, !=
 
 // == compara contenido pero no tipo de dato
 // === compara contenido y tipo de dato
+// != es distinto?
 
 let numero = 5;
 
