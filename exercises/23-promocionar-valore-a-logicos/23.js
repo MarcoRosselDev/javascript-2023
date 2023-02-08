@@ -26,3 +26,13 @@ console.log("strings");
 console.log(Boolean("")); // false
 console.log(Boolean(new String())); // true
 console.log(Boolean(new String(""))); // true
+
+console.log();
+
+console.log("objetos");
+console.log(Boolean({})); // true
+console.log(Boolean([])); // true
+
+let anonimo = function () {};
+
+console.log(Boolean(anonimo)); // true
