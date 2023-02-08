@@ -18,3 +18,14 @@ console.log(solution);
 let restarFn = new Function("a", "b", "return a - b"); // esta es por medio de constructor
 
 console.log(restarFn(2, 3));
+
+let persona = new Object();
+
+persona.id = 1;
+console.log(persona);
+
+persona.name = "Marco";
+console.log(persona);
+
+persona.name = "Lushito";
+console.log(persona);
