@@ -1,4 +1,4 @@
-// ejercicio 10: Declarar una ficnion usando la instruiccion function.
+// ejercicio 10: Declarar una funcion usando la instruiccion function.
 
 function exercise(a, b) {
   var sumar = a + b;
