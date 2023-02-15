@@ -12,3 +12,17 @@ console.log(str2.concat(", ", str1));
 
 console.log(str1.concat(" ", str2, ", ", str3));
 // Expected output: "Marco Rossel, Welcome to JavaScript "
+
+// podemos colocar n-cantidad de elementos...
+
+//------------------------------------------------------------------------
+let greetList = ["Hello", " ", "Venkat", "!"];
+"".concat(...greetList); // "Hello Venkat!"
+
+const a = "".concat({}); // [object Object]
+const b = "".concat([]); // ""
+const c = "".concat(null); // "null"
+const d = "".concat(true); // "true"
+const e = "".concat(4, 5); // "45"
+
+console.log(a, b, c, d, e);
