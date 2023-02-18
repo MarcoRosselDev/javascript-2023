@@ -15,3 +15,6 @@ const index = (nombre, objeto) => {
 };
 
 console.log(index("marco", personas));
+
+// por ahora no encuentro la solucion
+// segundo intento despues del descanso
