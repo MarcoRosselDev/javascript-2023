@@ -3,7 +3,7 @@
 const sumar = (a, b, c) => {
   return a + b + c;
 };
-
+// a, b, c -----> argumentos
 // simulamos que queremos pasarle los valores de un arreglo como 'parametros'.
 
 const numeros = [1, 4, 6];
