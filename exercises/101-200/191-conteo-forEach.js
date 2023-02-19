@@ -4,7 +4,7 @@ const numeros = [8, 2, 7, 3, 6, 9, 3, 2, 5, 7, 9, 2, 12, 1, 0];
 
 let conteo = {};
 
-let ocurrencias = numeros.forEach((valor, indice, arreglo) => {
+let ocurrencias = numeros.forEach((valor) => {
   if (conteo[valor]) {
     conteo[valor] += 1;
   } else {
