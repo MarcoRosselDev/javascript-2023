@@ -11,3 +11,19 @@ for (i in lenguajes) {
 // Indice: 2 ---> C++
 // Indice: 3 ---> JavaScript
 // Indice: 4 ---> Python
+
+const marco = {
+  nomber: "marco",
+  apellido: "rossel",
+  edad: 29,
+  nacionalidad: "chileno",
+};
+
+for (p in marco) {
+  console.log(`propiedad ${p} ----> ${marco[p]}`);
+}
+
+// propiedad nomber ----> marco
+// propiedad apellido ----> rossel
+// propiedad edad ----> 29
+// propiedad nacionalidad ----> chileno
