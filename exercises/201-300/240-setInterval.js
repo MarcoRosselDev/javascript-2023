@@ -3,3 +3,5 @@
 setInterval(function () {
   console.log("Mensaje en la fucnion anonima...");
 }, 500);
+
+// ctrl + alt + m ----> detener server.
