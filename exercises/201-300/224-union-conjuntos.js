@@ -1,4 +1,4 @@
-// ejercicio 225: crear una funcion para porveer la operacion de union entre conjuntos.
+// ejercicio 224: crear una funcion para porveer la operacion de union entre conjuntos.
 
 // por defecto set() no tiene una funcion para unir conjuntos, por lo que devemos crearla
 
