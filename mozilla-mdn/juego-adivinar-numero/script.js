@@ -8,6 +8,14 @@ console.log('se cargo exitosamente !');
 </div>
 */
 
+const inputForm = document.querySelector('.inputForm')
 const btn = document.querySelector('.btn')
+const paraf = document.querySelector('.intentosAnteriores')
 
-btn.addEventListener('click', () => console.log('button clicked !!'))
+function numeroAleatorio() {
+    const randomNumber = Math.round(Math.random() * 9)
+    console.log(randomNumber + 1);
+}
+
+btn.addEventListener('click', numeroAleatorio)
+
