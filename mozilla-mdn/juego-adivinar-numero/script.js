@@ -12,10 +12,17 @@ const inputForm = document.querySelector('.inputForm')
 const btn = document.querySelector('.btn')
 const paraf = document.querySelector('.intentosAnteriores')
 
+let numeros = []
+
 function numeroAleatorio() {
     const randomNumber = Math.round(Math.random() * 9)
     console.log(randomNumber + 1);
 }
 
-btn.addEventListener('click', numeroAleatorio)
+btn.addEventListener('click', function () {
+    numeros.push(inputForm.value)
+    console.log(numeros);
+    
+})
+
 
