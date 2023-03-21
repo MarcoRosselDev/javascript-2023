@@ -21,6 +21,11 @@ let intentos = 1;
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 console.log(randomNumber);
+let elementos = ''
+
+for (let i = 0; i < numeros.length; i++) {
+    const elementos = ` ${numeros[i]}`
+}
 
 btn.addEventListener('click', function () {
     numeros.push(inputForm.value)
@@ -38,7 +43,7 @@ btn.addEventListener('click', function () {
             pista.textContent = 'El numero es demaciado pequegnio.'
         }
         // 
-        paraf.textContent = numeros
+        paraf.textContent = `intentos anteriores = ${elementos}`
         mensajeIntentos.textContent = `segue intentando, te quedan n intentos`
     }
     inputForm.value = ''
