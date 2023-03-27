@@ -12,5 +12,4 @@ las apps modernas nesecitan comunicar informacion entre dispositivos atraves de 
     Gmail no solo almacena tus mails solo en variables en tu computadora. el los almacena en un computador en centros de datos.
     Tu no pierdes todos tus mensajes si pierdes tu computador en un lago, todos esos mensajes existen en  slack's servers.
 
-
 */
