@@ -31,3 +31,26 @@ function generateKey() {
         console.log(item.name)
     } 
 }
+
+
+// output------------------------------
+
+//Healing Potion
+
+//Light Leather
+
+//Padded Leather
+
+//Haste Potion
+
+//Leather Scraps
+
+//Copper Ore
+
+//Copper Bar
+
+//Iron Ore
+
+//Iron Bar
+
+//Gold Ore
