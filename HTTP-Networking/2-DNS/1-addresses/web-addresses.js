@@ -1,4 +1,4 @@
-/* Web Addresses
+/* Web Addresses    |   Direcciones Web
 eng
 In the real world, we use addresses to help us find where a friend lives, 
 where a business is located, or where a party is being thrown. In computing, 
@@ -38,7 +38,7 @@ and that IP address tells your computer exactly where to communicate with that W
 spa
 
 cada dispositivo conectado a internet tiene una direccion IP unica.
-cuando navegamos por internet, los dominios a lso que navegamos estan todos asociados con IP particulares!
+cuando navegamos por internet, los dominios a los que navegamos estan todos asociados con IP particulares!
 
 por ejemplo, esta URL de wikipedia apunta a una pagina sobre serdos peque;os.
 https://en.wikipedia.org/wiki/Miniature_pig
@@ -49,3 +49,4 @@ en.wikipedia.org se convierte en una direccion IP especifica,
 y esa direccion IP le dice a su computadora exactamente donde comunicarse con esa pagina de wikipedia.
 
 */
+
