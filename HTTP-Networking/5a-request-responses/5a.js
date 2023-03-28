@@ -26,3 +26,14 @@ async function getData(url) {
     })
     return response.json()
 }
+
+/* quest
+
+que hace el codigo de ejemplo, un cliente o un server ?
+
+    a   client
+    b   serrver
+
+    respuesta = client por que el metodo dice GET, por lo que esta solicitando
+
+*/

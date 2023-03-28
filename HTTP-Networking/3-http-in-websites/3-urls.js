@@ -8,3 +8,9 @@ Por ahora nos importa saber que la URL representa una piesa de informacion en ot
 nosotros podemos tener acceso a ella con una Request, y leyendo la respuesta con la que responde el servidor.
 
 */
+
+/* Assignment   | Asignacion
+
+
+
+*/
