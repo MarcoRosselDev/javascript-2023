@@ -41,3 +41,15 @@ vamos a enfocarnos en las URLs en este curso,
 pero es importante para saber que esa URLs es solo una clase de URI
 
 */
+
+/*  (URI = identifier (URN = name)(URL = locator)) */
+
+/* preguntar:
+
+    todas las URLs son URIs
+    verdad, por que locator pertenece al identifier
+
+    todas las URIs son URLs
+    falso, URI englova URL, por lo que no pueden ser.
+
+*/
