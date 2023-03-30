@@ -40,3 +40,22 @@ por ejemplo:
 
 
 */
+
+/* Not all schemes require a "//"
+eng
+
+The "http" in a URL is always followed by ://. 
+All URLs have the colon, 
+but the // part is only included for schemes that have an authority component. 
+As you can see above, the mailto scheme doesn't use an authority component, 
+so it doesn't need the slashes.
+---------------------------------------------------------------------
+spa
+
+El "http" en una URL es siempre seguida por una ://.
+todas las URLs tienen dos puntos, 
+pero el // es solo incluida por esquemas que tienen un componente de autoridad.
+Como puedes ver arriba, el esquema malito no usa un componente de autoridad,
+por lo que no necesita las barras.
+
+*/
