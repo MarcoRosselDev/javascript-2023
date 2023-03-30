@@ -18,6 +18,14 @@ The 8 sections are:
 
 http://dragonslayer:pwn3d@fantasyquest.com:8080/maps?sort=rank#id
 
+-   The protocol is required
+-   Usernames and passwords are optional
+-   A domain is required
+-   The default port for a given protocol is used if one is not provided
+-   The default (/) path is used if one isn't provided
+-   A query is optional
+-   A fragment is optional
+
 ----------------------------------------------------------------------
 spa
 
@@ -38,5 +46,13 @@ las 8 secciones son:
 8   Fragment        id
 
 http://dragonslayer:pwn3d@fantasyquest.com:8080/maps?sort=rank#id
+
+-   El protocolo es obligatorio.
+-   Los nombres de usuario y las contrase;as son opcionales.
+-   El dominio es obligatorio.
+-   El puerto predeterminado para un protocolo dado se usa si no se proporcina uno.
+-   La ruta predeterminada (/) se usa si no se proporciona una.
+-   Una consulta es opcional.
+-   Un fragmento es opcional
 
 */
