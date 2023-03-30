@@ -11,6 +11,15 @@ the wiring of the internet is usually around 100 milliseconds.
 It would be a very poor experience if your webpage were to freeze while 
 waiting for the network request to finish. 
 You wouldn't even be able to move the mouse while waiting!
+
+By making network requests asynchronously, 
+we let the webpage execute other code while 
+waiting for the HTTP response to come back. 
+This keeps the user experience snappy and user-friendly.
+
+As a general rule, 
+we should only use async code when we need to for performance reasons. 
+Synchronous code is simpler.
 -------------------------------------------------------
 spa
 
@@ -26,5 +35,14 @@ suele ser de alrededor de 100 milisegundos.
 Seria una experiencia muy mala si su pagina web se congelara mientras 
 espera que finalice la solicitud de la red.
 !Ni siquiera podrias mover el mouse mientras esperas!
+
+Al realizar solicitudes de red de forma asincrona,
+permite que la pagina web ejecute otro codigo mientras 
+esperamos que regrese la respuesta HTTP.
+Esto mantiene la experiencia del usuario agil y facil de usar. 
+
+Como regla general,
+solo debemos usar codigo asincrono cuando lo necesitemos por motivos de rendimeinto.
+El codigo sincrono es mas simple.
 
 */
