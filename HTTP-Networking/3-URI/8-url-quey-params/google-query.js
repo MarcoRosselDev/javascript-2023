@@ -12,6 +12,7 @@ Google chose to use query parameters to represent the value of your search query
 It makes sense - each search result page is essentially 
 the same page as far as structure and formatting are concerned -
     it's just showing you different results based on the search query.
+    
 ------------------------------------------------------------------------
 spa
 
