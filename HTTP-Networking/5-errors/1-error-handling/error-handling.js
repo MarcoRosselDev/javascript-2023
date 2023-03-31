@@ -40,10 +40,11 @@ const a = 10
 try {
     const speed = car.speed
 } catch (error) {
-    console.log(error);
+    console.log(`An error was thrown: ${error}`);
 }
 
 console.log(a);
+// se ejecuta lo que sigue de todos modos
 
 /* 
 eng
