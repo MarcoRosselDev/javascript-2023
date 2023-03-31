@@ -57,3 +57,18 @@ const user = await fetchUser()
 const location = await fetchLocationForUser(user)
 const server = await fetchServerForLocation(location)
 console.log(`The server is ${server}`)
+
+/* 
+eng
+
+They both do the same thing, but the second example is so much easier to understand! 
+The async and await keywords weren't released until after the .then API, 
+which is why there is still a lot of legacy .then() code out there.
+
+----------------------------------------
+spa
+
+Ambos hacen lo mismo, !pero el segundo ejemplo es mucho mas facil de entender !
+las palabras clave async y await no se lanzaron hasta despues de la API .then, 
+por lo que todavia hay mucho codigo .then() heredado.
+*/
