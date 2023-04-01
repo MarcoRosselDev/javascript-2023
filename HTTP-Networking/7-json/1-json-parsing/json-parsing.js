@@ -50,3 +50,34 @@ Los siguientes son datos JSON validos:
         }
     ]
 }
+
+/* Parsing HTTP Responses as JSON
+eng
+
+JavaScript provides us with some easy tools to help us work with JSON. 
+After making an HTTP request with the fetch() API, 
+we get a Response object. 
+That response object offers us some methods that help us interact with the response. 
+One such method is the .json() method. 
+The .json() method takes the response stream returned by a fetch request and 
+returns a promise that resolves into a JavaScript object parsed 
+from the JSON body of the HTTP response!
+
+const resp = await fetch(...)
+const javascriptObjectResponse = await resp.json()
+-----------------------------------------------------------------
+spa
+
+JavaScript nos proporciona algunas herramientas sencillas para ayudarnos a trabajar con JSON.
+Despues de realizar una solicitud HTTP con la API fetch(),
+obtenemos un objeto de respuesta.
+Ese objeto de respuesta nos ofrece algunos metodos que nos ayudan a interactuar con la respuesta.
+Uno de esos metodos es el metodo .json().
+El metodo .json() toma el flujo de respuesta devuelto 
+por una solicitud de busqueda y devuelve una promesa que 
+se resualve en un objeto javaScript analizado desde el cuerpo JSON  de la respuesta HTTP.
+
+const resp = await fetch(...)
+const javascriptObjectResponse = await resp.json()
+
+*/
