@@ -32,3 +32,17 @@ JSON es un estandar comun reconocido y compatible con todos los principales leng
 Por ejemplo, aunque el backend de Boot.dev esta escrito en Go, 
 todavia usamos JSON como formato de comunicacion estre el front-end y el backend.
 */
+
+/* Common use-cases
+eng
+
+    In HTTP request and response bodies
+    As formats for text files. .json files are often used as configuration files.
+    In NoSQL databases like MongoDB, ElasticSearch and Firestore
+-----------------------------------------
+spa
+
+    En cuerpo de solicitud y respuesta HTTP
+    Como formatos para archivos de texto. Los archivos .json a menudo se usan como archivos de configuracion.
+    En bases de datos NoSQL como MongoDB, ElasticSearch y Firestore
+*/
