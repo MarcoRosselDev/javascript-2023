@@ -81,3 +81,14 @@ const resp = await fetch(...)
 const javascriptObjectResponse = await resp.json()
 
 */
+
+/* Note
+
+It's important to note that the result of this method is NOT JSON. 
+It is the result of taking JSON data from the HTTP response body and parsing that input into a JavaScript Object
+-------------------------------------------------------------
+spa
+
+Es importatne tener en cuenta que el resultado de este metodo NO es JSON.
+Es el resultado de tomar datos JSON del cuerpo de respuesta HTTP y analizar esa entrada en un objeto JavaScript.
+*/
