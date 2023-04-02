@@ -37,3 +37,40 @@ Si puede analizar la cadena correctamente,
 use la funcion printLocationObj para imprimir el objeto analizado.
 Si se produjo un error, simplemente registre una cadena json no valida en la consola.
 */
+
+function parseLocation(locationString) {
+    try {
+        const a = JSON.parse(locationString)
+        printLocationObj(a)
+    } catch (error) {
+        console.log("invalid json string");
+    }
+}
+
+// don't touch below this line
+
+function printLocationObj(parsed) {
+    console.log(`id: ${parsed.id}`)
+    console.log(`discovered: ${parsed.discovered}`)
+    console.log(`name: ${parsed.name}`)
+    console.log(`recommendedLevel: ${parsed.recommendedLevel}`)
+}
+
+parseLocation(`
+    {
+        "discovered": false,
+        "id": "0194fdc2-fa2f-4cc0-81d3-ff12045b73c8",
+        "name": "Bandit Camp",
+        "recommendedLevel": 14
+    `)
+
+console.log('---')
+
+parseLocation(`
+    {
+        "discovered": false,
+        "id": "0194fdc2-fa2f-4cc0-81d3-ff12045b73c8",
+        "name": "Bandit Camp",
+        "recommendedLevel": 14
+    }
+    `)
