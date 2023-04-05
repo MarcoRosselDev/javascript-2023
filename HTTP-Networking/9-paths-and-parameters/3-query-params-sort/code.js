@@ -21,7 +21,7 @@ Actualice la URL completa de la funcion getUsers con un parametro de consulta qu
 */
 
 async function getUsers(url, apiKey) {
-    const fullURL = `${url}`
+    const fullURL = `${url}?sort=level`
     const response = await fetch(fullURL, {
         method: 'GET',
         mode: 'cors',
