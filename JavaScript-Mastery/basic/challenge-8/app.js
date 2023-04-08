@@ -3,7 +3,7 @@ const numero = prompt("ingrese un numero, por favor");
 console.log(typeof numero);
 
 if (numero > 10) {
-  text.innerText = "su numero es mayor a 10";
+  text.innerText = `su numero es ${numero}`;
 } else if (numero < 10) {
   // text.innerText = "su numero es menor a 10";
   // parseamos numero por que es string y no podemos sumarle 1
@@ -17,3 +17,5 @@ if (numero > 10) {
   text.innerText = "este no es un numero !";
   text.style.color = "red";
 }
+
+// last brak
