@@ -3,7 +3,8 @@ const butonColor = document.getElementById('buttonEnviar')
 const divColor = document.getElementById('color')
 const then = document.getElementById('then')
 
-butonColor.addEventListener('click', function () {
+function colorSelect(event) {
+    event.preventDefault();
     const color = inputColor.value;
 
     if (color == 'red' || 'blue' || 'yellow') {
@@ -16,8 +17,10 @@ butonColor.addEventListener('click', function () {
         then.innerText = "no escribiste ninguna de las opciones"
         console.log('tercer if');
     }
-    
-}) 
+}
+
+butonColor.addEventListener('click', colorSelect) 
+//inputColor.addEventListener('input', colorSelect)
 
 /* 1    ingrese un color en texto
 2   imprimir el color con el texto ? o un div con el color
