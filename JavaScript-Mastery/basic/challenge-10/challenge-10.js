@@ -16,18 +16,14 @@ const inputName = document.getElementById('inputName');
 const buttonSend = document.getElementById('buttonInputName');
 const printGreeting = document.getElementById('parr');
 
-let nameE = inputName.value
-
-
-function printDOM(n) {
-    console.log(typeof n);
-    printGreeting.innerText = `Buenos dias ${n} !`
+function saludar() {
+    printGreeting.innerHTML = `<h2>Buenos dias ${inputName.value}<h2/>`
 }
 
 
-buttonSend.addEventListener('click', function (event) {
-    event.preventDefault();
-    const result = printDOM(nameE)
-    console.log(result);
+buttonSend.addEventListener('click', () => {
+    saludar()
+/*     printGreeting.innerHTML = `<h1>hi ${inputValue}<h1/>`
+    console.log(inputValue);
+    console.log(typeof inputValue); */
 })
-
