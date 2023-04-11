@@ -40,3 +40,5 @@ copyr.addEventListener('mouseout', function () {
 copyr.addEventListener('click', function () {
     copyr.style.color = 'green'
 })
+
+// long brack
