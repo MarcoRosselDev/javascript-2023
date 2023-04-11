@@ -32,9 +32,9 @@ consola
 const saludo = document.getElementById('saludo')
 const printRegalo = document.getElementById('regalo')
 const regalos = ['Desayuno sorpresa', 'Bombon de chocolate', 'Jugete Coleccionable', 'Libro', 'Reloj', 'Gadget']
-const prp = prompt('Cual es tu nombre ?', 'Usuario')
+//const prp = prompt('Cual es tu nombre ?', 'Usuario')
 
-function greet(name) {
+function hello(name) {
     if (prp == null || prp == '') {
         return "no ingresaste un nombre"
     } else {
@@ -42,9 +42,25 @@ function greet(name) {
     }
 }
 
-const randomNumber = Math.floor(Math.random() * (regalos.length - 1))
-const regaloRadom = regalos[randomNumber]
 
-const greetResturn = greet(prp);
-saludo.innerText = greetResturn
+let randomNumber = Math.floor(Math.random() * (regalos.length ));
+//console.log(randomNumber);
+for (let i = 0; i < 10; i++) {
+    
+}
+/* function hospitality(name) {
+    let randomNumber = Math.floor(Math.random() * (regalos.length - 1));
+    const regaloRadom = regalos[randomNumber];
+    if (prp == null || prp == '') {
+        return "Te perdiste un regalo !"
+    } else {
+        return `¡ ${name}, Te queremos premiar con un ${regaloRadom} !`;
+    }
 
+}
+
+const greetResturn = hello(prp);
+saludo.innerText = greetResturn;
+const gitfHospitality = hospitality(prp);
+printRegalo.innerText = gitfHospitality;
+ */
