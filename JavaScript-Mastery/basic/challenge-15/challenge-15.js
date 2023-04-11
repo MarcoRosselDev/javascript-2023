@@ -42,12 +42,18 @@ function hello(name) {
     }
 }
 
-
-let randomNumber = Math.floor(Math.random() * (regalos.length ));
-//console.log(randomNumber);
-for (let i = 0; i < 10; i++) {
-    
+function random() {
+    let randomNumber = Math.floor(Math.random() * (regalos.length ));
+    return regalos[randomNumber]
 }
+//console.log(randomNumber);
+for (let i = 0; i < 100; i++) {
+    let a = random();
+    console.log(a);
+}
+
+// comprobacion exitosa
+
 /* function hospitality(name) {
     let randomNumber = Math.floor(Math.random() * (regalos.length - 1));
     const regaloRadom = regalos[randomNumber];
