@@ -27,14 +27,15 @@ haga clic en cancelar o no ponga texto en el aviso?
 
 const parrafo = document.getElementById('result')
 
-const namePrompt = prompt('Escribe tu nombre por favor ', '');
+const namePrompt = prompt('Escribe tu nombre por favor ', 'usuario');
 
 function greet(name) {
     parrafo.innerText = `Buenos dias ${name}, Bienvenido !`
 }
 
-if (namePrompt === '' || "null") {
-    console.log("no ingresaste un nombre");asdfa
+if (namePrompt == null) {
+    //console.log("no ingresaste un nombre");
+    parrafo.innerText = "No ingresaste un nobre"
 } else {
     greet(namePrompt)
 }
