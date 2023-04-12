@@ -22,7 +22,7 @@ on the next slide!
 (function () {
     const p = document.querySelectorAll('p')
     console.log(p);// [p, p, p, p]
-    // esto retorna una lista por lo que tenemois que iterar por ella,
+    // esto retorna una lista por lo que tenemos que iterar por ella,
     // entonces en cada una podemos aplicar .style.color = "green"
 
     p.forEach(e => e.style.color = 'green')
