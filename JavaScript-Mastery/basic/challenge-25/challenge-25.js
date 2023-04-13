@@ -20,5 +20,8 @@ addParagraph.addEventListener('click', function () {
 })
 
 removeParagraph.addEventListener('click', function () {
+    const a = div.lastElementChild
+    div.removeChild(a)
+    //div.removeChild()
 })
 
