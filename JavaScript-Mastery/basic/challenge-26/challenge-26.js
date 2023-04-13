@@ -14,27 +14,24 @@ try to delete the last paragraph.
 
 const div = document.querySelector('div')
 let para = document.querySelectorAll('p')
-console.log(para.length);
 // seleccionando botones sin id ni clases
 const btn = document.querySelectorAll('button')
 const addParagraph = btn[0]
 const removeParagraph = btn[1]
 
-let numberParagraph = 0
+let numberParagraph = 1
 
 addParagraph.addEventListener('click', function () {
     const newP = document.createElement('p');
     newP.innerText = `A new paragraph number ${numberParagraph}`;
     numberParagraph++
     div.appendChild(newP);
-    console.log(para.length);
 })
 
 removeParagraph.addEventListener('click', function () {
 
     //div.forEach((e) => console.log(e))
-    console.log(para);
-    if (div.lastElementChild === true) {
+    if (numberParagraph == 1) {
         alert("no puedes eliminar mas parrafos")
     } else{
         const a = div.lastElementChild
