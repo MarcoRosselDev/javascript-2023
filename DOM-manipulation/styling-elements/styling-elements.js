@@ -15,8 +15,15 @@ for (let i = 0; i < allLi.length; i++) {
 // agregar elemento li a ul
 // para eso primero lo creamos
 
-const newLi = document.createElement('li').innerText = 'Spider man';
+const newLi = document.createElement('li')
+newLi.innerText = 'Spider man';
+newLi.style.color = 'red'
+newLi.style.fontSize = '1.6rem'
 // seleccionamos el elemento donde queremos inyectar el elemento creado
 const ul = document.querySelector('ul');
 ul.append(newLi)
 
+// lo agrega al final
+// podemos hacer una funcion para agregar los estilos automaticamente
+
+newLi.remove()
