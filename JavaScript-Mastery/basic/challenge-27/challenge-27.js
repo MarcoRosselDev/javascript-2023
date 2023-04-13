@@ -27,5 +27,4 @@ iptSubmit.addEventListener('click', function (e) {
     }else{
         alert('no ingresaste un numero, por favor intenta denuevo !')
     }
-
 })
