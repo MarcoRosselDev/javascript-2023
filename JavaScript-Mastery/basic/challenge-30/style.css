@@ -1,0 +1,23 @@
+body{
+    height: 3000px;
+}
+.one{
+    background-color: beige;
+    transition: all 3s;
+}
+.two{
+    background-color: blueviolet;
+    transition: all 3s;
+}
+.three{
+    background-color: coral;
+    transition: all 3s;
+}
+.four{
+    background-color: cornflowerblue;
+    transition: all 3s;
+}
+.five{
+    background-color: darkgoldenrod;
+    transition: all 3s;
+}
