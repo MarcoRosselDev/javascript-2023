@@ -14,8 +14,8 @@ const imagenes = ['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jp
     
     const btns = document.querySelectorAll('button');
     
-    const nextBtn = btns[0];
-    const lastBtn = btns[1];
+    const nextBtn = btns[1];
+    const lastBtn = btns[0];
     
     nextBtn.addEventListener('click', function () {
         
@@ -26,6 +26,17 @@ const imagenes = ['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jp
             iterador = 1
             imgElement.src = `image${iterador}.jpg`
         }
+    })
+    lastBtn.addEventListener('click', function () {
 
+        
+        if (iterador <= 1) {
+            iterador = imagenes.length 
+            imgElement.src = `image${iterador}.jpg`
+        } else {
+            iterador--;
+            imgElement.src = `image${iterador}.jpg`
+        }
+        console.log(imagenes.length);
     })
 })()
