@@ -30,7 +30,7 @@ document.addEventListener('keydown', function(e) {
             bodyy.className = 'three'
             break;
         case 70:
-            bodyy.className = 'four'
+            bodyy.className = 'four' 
             break;
         case 71:
             bodyy.className = 'five'
