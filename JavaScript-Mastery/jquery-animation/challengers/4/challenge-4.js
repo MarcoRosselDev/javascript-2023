@@ -5,5 +5,6 @@ div, but not the one outside the div.
 */
 
 (function () {
-    $('#main p').css({'color':'red','font-size':'24px'})
+    'strict mode';
+    $('#main p').css({'color':'red','font-size':'24px'});
 })()
