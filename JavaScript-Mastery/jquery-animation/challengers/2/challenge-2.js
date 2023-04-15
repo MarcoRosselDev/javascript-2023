@@ -5,6 +5,6 @@ paragraph to 24px.
 
 (function () {
     'strict mode';
-    $(document.getElementById('paragraph')).css('font-size', '24px');
+    $('#paragraph').css('font-size', '24px');
     console.log(document.getElementById('paragraph').style.fontSize);
 })()
