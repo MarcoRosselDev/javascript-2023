@@ -31,7 +31,5 @@
         })
     }
 
-    console.log(allUlLi[0].innerHTML);
-
     
 })()
