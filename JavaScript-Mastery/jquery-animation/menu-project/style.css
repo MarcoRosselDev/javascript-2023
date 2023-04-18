@@ -14,7 +14,11 @@ body{
 ul, li, h1, h2, p {
     color: rgb(191, 147, 147);
 }
-
+li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 20px;
+}
 .article1 {
     margin-left: 30px;
     padding: 0;
@@ -45,6 +49,7 @@ a {
 
 a:hover{
     color: rgb(145, 181, 213, 0.4);
+    text-decoration: none;
 }
 
 .selectAllUl{
