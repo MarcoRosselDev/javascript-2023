@@ -10,7 +10,12 @@
             const esteMenu = this.parentElement;
             const a = esteMenu.querySelectorAll('li')
             for (let f = 0; f < a.length; f++) {
-                a[f].className = 'mostrar-menu';
+
+                if (a[f].className == 'mostrar-menu') {
+                    a[f].className = 'ocultar-menu'
+                } else{
+                    a[f].className = 'mostrar-menu';
+                }
             }
         })
     }
