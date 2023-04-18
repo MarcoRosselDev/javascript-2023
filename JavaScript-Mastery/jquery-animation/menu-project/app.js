@@ -7,7 +7,11 @@
     console.log(allLi);
     for (let i = 0; i < allUl.length; i++) {
         allUl[i].addEventListener('click', function () {
-            console.log('clicked');
+            const esteMenu = this.parentElement;
+            const a = esteMenu.querySelectorAll('li')
+            for (let f = 0; f < a.length; f++) {
+                a[f].className = 'mostrar-menu';
+            }
         })
     }
 
