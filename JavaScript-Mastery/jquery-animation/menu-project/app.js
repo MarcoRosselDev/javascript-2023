@@ -2,7 +2,7 @@
     'use strict';
 
     const allUl = document.querySelectorAll('.ul');
-    const allLi = document.querySelectorAll('ul li ul li')
+    const allLi = document.querySelectorAll('ul li ul')
 // primero ocultamos todas las sub-listas
 
 function cerrarTodo() {
@@ -16,17 +16,18 @@ cerrarTodo()
     for (let i = 0; i < allUl.length; i++) {
         allUl[i].addEventListener('click', function () {
 
-            const esteMenu = this.parentElement;
-            const a = esteMenu.querySelectorAll('li')
-            for (let f = 0; f < a.length; f++) {
+            console.log('clicked');
+            const esteMenu = this.parentNode.children;
+            console.log(esteMenu);
+            esteMenu.querySelectorAll('li')
+            /* for (let f = 0; f < a.length; f++) {
 
-                if (a[f].className == 'mostrar-menu') {
-                    a[f].className = 'ocultar-menu'
+                if (a[f].className == 'ocultar-menu') {
+                    a[f].className = 'mostrar-menu'
                 } else{
-                    cerrarTodo()
-                    a[f].className = 'mostrar-menu';
+                    a[f].className = 'ocultar-menu';
                 }
-            }
+            } */
         // preguntamos si alugn otro menu esta abierto
         // si es true lo ocultamos y mostramos este
 
