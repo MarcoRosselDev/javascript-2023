@@ -19,6 +19,12 @@ p, li, a, h1, h2{
     color: rgba(237, 217, 191, 0.307);
 }
 
+li{
+    margin-left: 20px;
+    list-style: none;
+    width: 80%;
+}
+
 .article1{
     width: 20%;
     border: 1px solid yellowgreen;
