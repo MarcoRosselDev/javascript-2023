@@ -7,7 +7,23 @@ body{
     background-color: rgba(9, 3, 22, 0.912);
     font-size: 1.5rem;
 }
+header{
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
 
 p, li, a, h1, h2{
     color: rgba(237, 217, 191, 0.307);
+}
+
+.article1{
+    width: 20%;
+    border: 1px solid yellowgreen;
+}
+.article2{
+    width: 50%;
+    border: 1px solid yellowgreen;
 }
