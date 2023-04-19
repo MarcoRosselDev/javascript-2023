@@ -33,3 +33,11 @@ ul li{
     width: 50%;
     border: 1px solid yellowgreen;
 }
+
+.hide-menu{
+    display: none;
+}
+
+.show-menu{
+    display: block;
+}
