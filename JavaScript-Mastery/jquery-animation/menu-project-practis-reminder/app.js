@@ -6,7 +6,10 @@
 
     console.log(liSelect);
     // primero ocultamos todas las listas
-    allLi.forEach(e => e.className = 'hide-menu')
+    function hideAll() {
+        allLi.forEach(e => e.className = 'hide-menu')
+    }
+    hideAll()
     /* liSelect.forEach((e)=> e.addEventListener('click', (f)=>{
         console.log(f);
         console.log(`clicked from menu ` );
@@ -18,7 +21,14 @@
     })) */
 
     liSelect.forEach(i => i.addEventListener('click', function(){
-        this.parentElement.querySelector('ul').className = 'show-menu';
+        const esteMenu = this.parentElement.querySelector('ul');
+
+        if (esteMenu.className == 'hide-menu') {
+            hideAll()
+            esteMenu.className = 'show-menu'
+        } else {
+            esteMenu.className = 'hide-menu';
+        }
     }))
 
     /* for (let i = 0; i < liSelect.length; i++) {
