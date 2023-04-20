@@ -27,11 +27,11 @@ ul li{
 
 .article1{
     width: 20%;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
 }
 .article2{
     width: 50%;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
 }
 
 .hide-menu{
