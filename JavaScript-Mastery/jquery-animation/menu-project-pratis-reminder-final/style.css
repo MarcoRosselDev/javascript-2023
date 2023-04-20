@@ -34,10 +34,24 @@ main div{
 li{
     border: 1px solid greenyellow;
 }
+ul li:hover{
+    background-color: brown;
+}
+li, ul{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
 
 a{
     display: block;
     text-decoration: none;
+}
+a:hover{
+    background-color: black;
+}
+span{
+    display: block;
 }
 
 .h1-title{
