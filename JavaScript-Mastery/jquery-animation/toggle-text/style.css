@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    position: relative;
+}
+
+header{
+    gap: 1rem;
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+}
+
+header h1{
+    border: 1px solid red;
+    display: block;
+    width: max-content;
+}
