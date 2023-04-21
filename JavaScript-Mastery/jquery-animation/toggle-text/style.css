@@ -42,3 +42,6 @@ header h1:hover{
 .show-text{
     display: block;
 }
+.green{
+    background-color: rgba(85, 107, 47, 0.742);
+}
