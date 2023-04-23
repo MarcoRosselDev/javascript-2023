@@ -16,6 +16,11 @@
         } else {
             este.className = 'hide-menu';
         }
+        /* ocultar cuando otro menu este mostrando su lista */
+
+        /* cambiar el texto cuando clickee un enlace de la lista */
+
+        /* puede ser agregar un formulario */
     }))
 }
 )()
