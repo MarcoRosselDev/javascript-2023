@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: #4a3eaa;
+    color: #cf7f56;
+}
+
+main{
+    display: flex;
+}
+
+.rightSection{
+    width: 40%;
+    border: 1px solid red;
+}
+.leftSection{
+    width: 40%;
+    border: 1px solid red;
+}
+
+/* .another-colors{
+    color: #fc5650;
+    color: #2f939a;
+    color: #cce850;
+} */
