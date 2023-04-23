@@ -11,18 +11,35 @@ body{
 }
 
 main{
+   /*  margin-top: 30px; */
     display: flex;
 }
 
-.rightSection{
-    width: 40%;
-    border: 1px solid red;
-}
-.leftSection{
-    width: 40%;
-    border: 1px solid red;
+h1{
+    text-align: center;
+    padding: 20px 0 20px 0;
 }
 
+li{
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.rightSection{
+    width: 60%;
+    padding: 1rem;
+}
+.leftSection{
+    padding: 1rem;
+    margin-left: 10%;
+    width: 20%;
+    background-color: #cf7f56;
+    color: #4a3eaa;
+}
+
+.hide-menu{
+    display: none;
+}
 /* .another-colors{
     color: #fc5650;
     color: #2f939a;
