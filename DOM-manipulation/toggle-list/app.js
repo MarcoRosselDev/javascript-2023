@@ -9,7 +9,13 @@
 
     console.log(spans);
     spans.forEach(e => e.addEventListener('click', function () {
-        console.log(this);
+        const este = this.parentNode.querySelector('ul');
+        
+        if (este.className == 'hide-menu') {
+            este.className = 'show-menu';
+        } else {
+            este.className = 'hide-menu';
+        }
     }))
 }
 )()

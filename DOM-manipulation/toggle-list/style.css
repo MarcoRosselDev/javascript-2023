@@ -35,10 +35,26 @@ li{
     width: 20%;
     background-color: #cf7f56;
     color: #4a3eaa;
+    border-radius: 1rem;
+}
+
+
+
+span{
+    display: block;
+    width: 90%;
+}
+
+span:hover {
+    background-color: #4a3eaa;
 }
 
 .hide-menu{
     display: none;
+}
+
+.show-menu{
+    display: block;
 }
 /* .another-colors{
     color: #fc5650;
