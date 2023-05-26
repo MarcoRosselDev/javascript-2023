@@ -23,3 +23,38 @@ main{
   flex-flow: row wrap;
   border: 1px solid blueviolet;
 }
+
+.playerCard{
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 200px;
+  gap: 5px;
+}
+
+.numbers div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 5px;
+  gap: 6px;
+}
+
+.ball{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 50%;
+}
