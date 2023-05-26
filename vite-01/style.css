@@ -18,6 +18,8 @@ main{
   height: 100%;
 }
 
-.main-div{
-  background-color: pink;
+.containerUp{
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid blueviolet;
 }
