@@ -75,3 +75,7 @@ main{
 .ball:hover{
   background-color: blue;
 }
+
+.newNumbers{
+  margin-top: 20px;
+}
