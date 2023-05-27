@@ -33,6 +33,11 @@ playButton.addEventListener('click', function (e) {
   bingoPass.push(sliceBingo);
   const bingoDom = print(bingoPass);
   newNumber.innerHTML = bingoDom;
+
+  // preguntar si este numero esta en player1 y cpu
+
+  console.log(cpu.indexOf(sliceBingo)); // devuelve -1, probemos despues
+
 })
 
 //newNumber.innerHTML = `<div>${randomNumber[0]}</div>`;
