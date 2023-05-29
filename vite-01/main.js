@@ -28,11 +28,15 @@ playButton.addEventListener('click', function (e) {
   e.preventDefault();
   const randomNumber = Math.round(Math.random() * bingo.length);
   const sliceBingo = bingo.splice(randomNumber, 1 );
-  console.log(sliceBingo, 'sliceBingo value');
-  console.log(bingo, 'bingo value');
-  bingoPass.push(sliceBingo);
-  const bingoDom = print(bingoPass);
-  newNumber.innerHTML = bingoDom;
+  
+
+  if (sliceBingo > 0 || sliceBingo < 31) {
+    bingoPass.push(sliceBingo);
+    const bingoDom = print(bingoPass);
+    newNumber.innerHTML = bingoDom;
+  } else {
+    console.log('salio un numero no esperado');
+  }
 
   // preguntar si este numero esta en player1 y cpu
 
