@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    console.log('se ejecuto automaticamente cuando se cargo la pagina ');
+    // quiero que cuando se cargue la paguina se cargue el formulario desde javaScript!
 
-
+    // si o si tiene que estar primero toda esta parte
     const body = document.getElementById('body');
     body.innerHTML = `
     <form>
@@ -11,8 +11,15 @@
         <button class="btnSend">send</button>
     </form>`;
 
+    // ahora que estoy seguro que se cargo este form puedo manipular.
 
-    // quiero que cuando se cargue la paguina se cargue el formulario desde javaScript!
+    const inputValue = document.querySelector('input');
+    const sendBtn = document.querySelector('.btnSend');
 
+    sendBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        console.log(inputValue.value);
+    })
 
 })()
