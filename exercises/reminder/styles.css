@@ -6,4 +6,25 @@
 
 body{
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btnSend{
+    background-color: rgb(103, 103, 224);
+    color: aliceblue;
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(26, 38, 204, 0.19);
+}
+
+input{
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(55, 54, 54, 0.191);
 }
