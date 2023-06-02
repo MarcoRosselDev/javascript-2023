@@ -9,17 +9,24 @@
     <form>
         <input type="text">
         <button class="btnSend">send</button>
-    </form>`;
+    </form>
+    <ul>
+    </ul>
+    `;
 
     // ahora que estoy seguro que se cargo este form puedo manipular.
 
     const inputValue = document.querySelector('input');
     const sendBtn = document.querySelector('.btnSend');
+    const ul = document.querySelector('ul');
 
     sendBtn.addEventListener('click', function (event) {
         event.preventDefault();
 
         console.log(inputValue.value);
+        ul.innerHTML = `<li>${inputValue.value}</li>`;
+        inputValue.value = '';
+
     })
 
 })()
