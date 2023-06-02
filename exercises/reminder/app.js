@@ -19,14 +19,18 @@
     const inputValue = document.querySelector('input');
     const sendBtn = document.querySelector('.btnSend');
     const ul = document.querySelector('ul');
+    const list = []
 
     sendBtn.addEventListener('click', function (event) {
         event.preventDefault();
-
-        console.log(inputValue.value);
-        ul.innerHTML = `<li>${inputValue.value}</li>`;
+        list.push(inputValue.value)
         inputValue.value = '';
 
+        let printDom = '';
+        for (let i = 0; i < list.length; i++) {
+            printDom += `<li>${list[i]}</li>`;
+        }
+        ul.innerHTML = printDom;
     })
 
 })()

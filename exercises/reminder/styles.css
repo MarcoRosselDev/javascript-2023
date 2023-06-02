@@ -30,3 +30,10 @@ input{
     border: 1px solid rgba(55, 54, 54, 0.191);
     padding: 0 10px;
 }
+
+ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
