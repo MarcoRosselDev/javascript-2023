@@ -19,10 +19,17 @@
     const inputValue = document.querySelector('input');
     const sendBtn = document.querySelector('.btnSend');
     const ul = document.querySelector('ul');
-    const list = []
-
+    const list = [];
+    console.log(list.length);
+    if (list.length == 0) {
+        ul.style.display = 'none';
+    } 
+    
     sendBtn.addEventListener('click', function (event) {
         event.preventDefault();
+
+        ul.style.display = 'flex';
+
         list.push(inputValue.value)
         inputValue.value = '';
 

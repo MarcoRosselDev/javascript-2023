@@ -14,6 +14,18 @@ body{
     background-color: rgba(255, 255, 255, 128);
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(53, 53, 53, 0.301);
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(95, 158, 160, 0.37);
+}
+
 .btnSend{
     background-color: rgb(103, 103, 224);
     color: aliceblue;
@@ -21,6 +33,10 @@ body{
     height: 30px;
     border-radius: 8px;
     border: 1px solid rgba(26, 38, 204, 0.19);
+}
+
+.btnSend:hover, .btnSend:focus{
+    background-color: rgb(66, 66, 219); 
 }
 
 input{
@@ -36,4 +52,20 @@ ul{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 9px;
+    gap: 5px;
+    padding: 10px 10px;
+    border: 1px solid rgba(68, 68, 68, 0.384);
+    margin-left: 5px;
+    margin-right: 5px;    
+    border-radius: 8px;
+    background-color: rgba(0, 21, 255, 0.243);
+}
+
+li{
+    list-style: none;
+    padding: 7px 20px;
+    border: 1px solid rgba(69, 69, 69, 0.319);
+    border-radius: 8px;
+    background-color: azure;
 }
