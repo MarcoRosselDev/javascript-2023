@@ -3,25 +3,25 @@ import './style.css';
 const playButton = document.querySelector('.ball');
 const newNumber = document.querySelector('.numberPass');
 const player1Dom = document.querySelector('.player1');
-const cpuDom = document.querySelector('.cpu');
+const player2Dom = document.querySelector('.player2');
 
 const player1 = [2, 4, 5,7,10, 14,16,19, 20, 21,22,24,26, 29,30];
-const cpu = [1, 3, 5,7,8, 10,13,15, 19,20,21, 23,24, 26,28];
+const player2 = [1, 3, 5,7,8, 10,13,15, 19,20,21, 23,24, 26,28];
 let bingo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
-let bingoPass = []
+let nuevaBola = [];
 
 function print(arr) {
-  let domPrint = '';
+  let domManipulation = ''; //------------------------> esto para no manipular el dom x cantidad de veces a solo 1 vez al final.
   for (let i = 0; i < arr.length; i++) {
-    domPrint += `<div>${arr[i]}</div>`;
+    domManipulation += `<div>${arr[i]}</div>`;
   }
-  return domPrint;
+  return domManipulation; //------------------------->
 }
 
-const funPrint = print(player1);
-const cpuPrint = print(cpu)
-player1Dom.innerHTML = funPrint;
-cpuDom.innerHTML = cpuPrint;
+const printPlayer1 = print(player1);
+const printPlayer2 = print(player2)
+player1Dom.innerHTML = printPlayer1;
+player2Dom.innerHTML = printPlayer2;
 
 
 playButton.addEventListener('click', function (e) {
@@ -31,14 +31,15 @@ playButton.addEventListener('click', function (e) {
   
 
   if (sliceBingo > 0 || sliceBingo < 31) {
-    bingoPass.push(sliceBingo);
-    const bingoDom = print(bingoPass);
+    nuevaBola.push(sliceBingo);
+    const bingoDom = print(nuevaBola);
     newNumber.innerHTML = bingoDom;
+
   } else {
     console.log('salio un numero no esperado');
   }
 
-  // preguntar si este numero esta en player1 y cpu
+  // preguntar si este numero esta en player1 y player2
 
   console.log(cpu.indexOf(sliceBingo)); // devuelve -1, probemos despues
 
