@@ -43,13 +43,3 @@ playButton.addEventListener('click', function (e) {
   console.log(cpu.indexOf(sliceBingo)); // devuelve -1, probemos despues
 
 })
-
-//newNumber.innerHTML = `<div>${randomNumber[0]}</div>`;
-
-/* document.querySelector('#app').innerHTML = `
-<div class="main-div">
-  <p class="read-the-docs">
-    Click on the Vite logo to learn more
-  </p>
-</div>`
-; */
