@@ -27,20 +27,35 @@ player2Dom.innerHTML = printPlayer2;
 playButton.addEventListener('click', function (e) {
   e.preventDefault();
   const randomNumber = Math.round(Math.random() * bingo.length);
-  const sliceBingo = bingo.splice(randomNumber, 1 );
+  const spliceBingo = bingo.splice(randomNumber, 1 );
   
 
-  if (sliceBingo > 0 || sliceBingo < 31) {
-    nuevaBola.push(sliceBingo);
+  if (spliceBingo > 0 || spliceBingo < 31) {
+    nuevaBola.push(spliceBingo);
+    console.log(bingo);
+    console.log(nuevaBola);
+    console.log(spliceBingo);
+
     const bingoDom = print(nuevaBola);
     newNumber.innerHTML = bingoDom;
+    
+    // preguntar si este numero esta en player1 y player2
+    console.log(player2.indexOf(spliceBingo[0])); // devuelve -1, probemos despues
+    console.log(player1.indexOf(spliceBingo[0])); // devuelve -1, probemos despues
 
+    if (player1.indexOf(spliceBingo[0] == true)) {
+      
+      player1.splice(spliceBingo[0], 1);
+    }
+    if (player2.indexOf(spliceBingo[0] == true)) {
+
+      player1.splice(spliceBingo[0], 1);
+    }
+    
   } else {
     console.log('salio un numero no esperado');
   }
 
-  // preguntar si este numero esta en player1 y player2
 
-  console.log(cpu.indexOf(sliceBingo)); // devuelve -1, probemos despues
 
 })
