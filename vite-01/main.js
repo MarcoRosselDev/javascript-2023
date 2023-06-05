@@ -31,7 +31,7 @@ playButton.addEventListener('click', function (e) {
   const spliceBingo = bingo.splice(randomNumber, 1);
   
 
-  if (spliceBingo > 0 || spliceBingo < 31) {
+  if (spliceBingo[0] > 0 || spliceBingo[0] < 31) {
     nuevaBola.push(spliceBingo);
 
     const bingoDom = print(nuevaBola);
@@ -61,22 +61,16 @@ playButton.addEventListener('click', function (e) {
           }
         }
       )
-
     }
+
+    console.log(player1);
+    if (player1.length == 0) {
+      console.log('player 1 gano');
+    }
+
+
   } else {
     console.log('salio un numero no esperado');
   }
-
-  
-  /* if (player1.length == 0 || player2.length == 0) {
-    console.log('empate');
-  }  */
-  if (player1.length == 0) {
-    console.log('player 1 gano');
-  }
-  /* if  (player2.length == 0){
-    console.log('player 1 gano');
-  } */
-  
 
 })
