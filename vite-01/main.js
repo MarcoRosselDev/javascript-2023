@@ -32,36 +32,37 @@ playButton.addEventListener('click', function (e) {
 
   if (spliceBingo > 0 || spliceBingo < 31) {
     nuevaBola.push(spliceBingo);
-    console.log(bingo);
-    console.log(nuevaBola);
-    console.log(spliceBingo);
 
     const bingoDom = print(nuevaBola);
     newNumber.innerHTML = bingoDom;
     
     // preguntar si este numero esta en player1 y player2
-    console.log(player2.indexOf(spliceBingo[0])); // devuelve -1, probemos despues
-    console.log(player1.indexOf(spliceBingo[0])); // devuelve -1, probemos despues
 
     if (player1.indexOf(spliceBingo[0] == true)) {
-      player1.splice(spliceBingo[0], 1);
-      // pintar el backgroud color de este numero de otro color para que sea visual.
-    }
-    if (player2.indexOf(spliceBingo[0] == true)) {
+      player1.splice(spliceBingo[0], 1);  //---------> si esta el num entonces cortarlo del arreglo.
+
       const a = player1Dom.childNodes;
       a.forEach((e) => {
         if (e.innerText == spliceBingo[0]) {
-            e.style.backgroundColor = 'red';
+            e.style.backgroundColor = 'lightblue';
           }
         }
       )
-      player1.splice(spliceBingo[0], 1);
     }
-    
+    if (player2.indexOf(spliceBingo[0] == true)) {
+      player2.splice(spliceBingo[0], 1);
+    }
+
+    if (player1.length == 0) {
+      console.log('player 1 gano');
+    }
+    console.log(player1.length);
+    console.log(player1);
+
   } else {
     console.log('salio un numero no esperado');
   }
 
-
+  
 
 })
