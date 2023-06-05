@@ -44,11 +44,17 @@ playButton.addEventListener('click', function (e) {
     console.log(player1.indexOf(spliceBingo[0])); // devuelve -1, probemos despues
 
     if (player1.indexOf(spliceBingo[0] == true)) {
-      
       player1.splice(spliceBingo[0], 1);
+      // pintar el backgroud color de este numero de otro color para que sea visual.
     }
     if (player2.indexOf(spliceBingo[0] == true)) {
-
+      const a = player1Dom.childNodes;
+      a.forEach((e) => {
+        if (e.innerText == spliceBingo[0]) {
+            e.style.backgroundColor = 'red';
+          }
+        }
+      )
       player1.splice(spliceBingo[0], 1);
     }
     
