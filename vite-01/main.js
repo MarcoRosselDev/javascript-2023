@@ -66,9 +66,12 @@ playButton.addEventListener('click', function (e) {
         }
       )
     }
-
+    
     console.log(player1);
-    if (player1.length == 0) {
+
+    if (player1.length == 0 && player2.length == 0) {
+      console.log('empate');
+    }else if (player1.length == 0) {
       console.log('player 1 gano');
     } else if (player2.length == 0) {
       console.log('player 2 gano');
