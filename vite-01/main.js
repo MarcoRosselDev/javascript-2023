@@ -40,23 +40,27 @@ playButton.addEventListener('click', function (e) {
     // preguntar si este numero esta en player1 y player2
 
     if (player1.indexOf(spliceBingo[0] == true)) {
-      player1.splice(randomNumber, 1);  //---------> si esta el num entonces cortarlo del arreglo.
-
+      
       const a = player1Dom.childNodes;
+
+      
       a.forEach((e) => {
         if (e.innerText == spliceBingo[0]) {
-            e.style.backgroundColor = 'lightblue';
+          e.style.backgroundColor = 'lightblue';
+          const index = player1.indexOf(spliceBingo[0]);
+          player1.splice(index, 1);  //---------> si esta el num entonces cortarlo del arreglo.
           }
         }
       )
     }
 
     if (player2.indexOf(spliceBingo[0] == true)) {
-      player2.splice(randomNumber, 1);
-
+      
       const a = player2Dom.childNodes;
       a.forEach((e) => {
         if (e.innerText == spliceBingo[0]) {
+            const index = player2.indexOf(spliceBingo[0]);
+            player2.splice(index, 1);  //---------> si esta el num entonces cortarlo del arreglo.
             e.style.backgroundColor = 'pink';
           }
         }
@@ -66,6 +70,8 @@ playButton.addEventListener('click', function (e) {
     console.log(player1);
     if (player1.length == 0) {
       console.log('player 1 gano');
+    } else if (player2.length == 0) {
+      console.log('player 2 gano');
     }
 
 
