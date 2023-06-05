@@ -78,10 +78,16 @@ main{
 }
 
 .newNumbers{
+  margin-top: 20px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   margin-top: 20px;
   width: 100%;
+  text-align: center;
+}
+
+.newNumbers p{
+  margin-top: 20px;
 }
 
 .balls{

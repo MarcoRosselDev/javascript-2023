@@ -4,6 +4,7 @@ const playButton = document.querySelector('.ball');
 const newNumber = document.querySelector('.numberPass');
 const player1Dom = document.querySelector('.player1');
 const player2Dom = document.querySelector('.player2');
+const winer = document.querySelector('.newNumbers');
 
 const player1 = [2, 4, 5,7,10, 14,16,19, 20, 21,22,24,26, 29,30];
 const player2 = [1, 3, 5,7,8, 10,13,15, 19,20,21, 23,24, 26,28];
@@ -42,7 +43,6 @@ playButton.addEventListener('click', function (e) {
     if (player1.indexOf(spliceBingo[0] == true)) {
       
       const a = player1Dom.childNodes;
-
       
       a.forEach((e) => {
         if (e.innerText == spliceBingo[0]) {
@@ -57,6 +57,7 @@ playButton.addEventListener('click', function (e) {
     if (player2.indexOf(spliceBingo[0] == true)) {
       
       const a = player2Dom.childNodes;
+
       a.forEach((e) => {
         if (e.innerText == spliceBingo[0]) {
             const index = player2.indexOf(spliceBingo[0]);
@@ -67,13 +68,15 @@ playButton.addEventListener('click', function (e) {
       )
     }
     
-    console.log(player1);
 
     if (player1.length == 0 && player2.length == 0) {
       console.log('empate');
+      winer.innerHTML += `<p>empate</p>`;
     }else if (player1.length == 0) {
+      winer.innerHTML += `<p>player 1 wins</p>`;
       console.log('player 1 gano');
     } else if (player2.length == 0) {
+      winer.innerHTML += `<p>player 2 wins</p>`;
       console.log('player 2 gano');
     }
 
