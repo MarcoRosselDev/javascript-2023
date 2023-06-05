@@ -26,8 +26,9 @@ player2Dom.innerHTML = printPlayer2;
 
 playButton.addEventListener('click', function (e) {
   e.preventDefault();
+
   const randomNumber = Math.round(Math.random() * bingo.length);
-  const spliceBingo = bingo.splice(randomNumber, 1 );
+  const spliceBingo = bingo.splice(randomNumber, 1);
   
 
   if (spliceBingo > 0 || spliceBingo < 31) {
@@ -39,7 +40,7 @@ playButton.addEventListener('click', function (e) {
     // preguntar si este numero esta en player1 y player2
 
     if (player1.indexOf(spliceBingo[0] == true)) {
-      player1.splice(spliceBingo[0], 1);  //---------> si esta el num entonces cortarlo del arreglo.
+      player1.splice(randomNumber, 1);  //---------> si esta el num entonces cortarlo del arreglo.
 
       const a = player1Dom.childNodes;
       a.forEach((e) => {
@@ -49,20 +50,33 @@ playButton.addEventListener('click', function (e) {
         }
       )
     }
+
     if (player2.indexOf(spliceBingo[0] == true)) {
-      player2.splice(spliceBingo[0], 1);
-    }
+      player2.splice(randomNumber, 1);
 
-    if (player1.length == 0) {
-      console.log('player 1 gano');
-    }
-    console.log(player1.length);
-    console.log(player1);
+      const a = player2Dom.childNodes;
+      a.forEach((e) => {
+        if (e.innerText == spliceBingo[0]) {
+            e.style.backgroundColor = 'pink';
+          }
+        }
+      )
 
+    }
   } else {
     console.log('salio un numero no esperado');
   }
 
+  
+  /* if (player1.length == 0 || player2.length == 0) {
+    console.log('empate');
+  }  */
+  if (player1.length == 0) {
+    console.log('player 1 gano');
+  }
+  /* if  (player2.length == 0){
+    console.log('player 1 gano');
+  } */
   
 
 })
