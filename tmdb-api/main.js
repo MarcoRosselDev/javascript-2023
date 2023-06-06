@@ -20,7 +20,18 @@ const movieBtn = document.querySelector('.movieBtn');
 movieBtn.addEventListener('click', function (event) {
   event.preventDefault();
 
-  console.log(input.value);
+  async function search(movie) {
+    try {
+      const request = await fetch(`https://api.themoviedb.org/3/movie/11?api_key=${apiKey}`);
+      const data = await request.json();
 
-  input.value = '';
+      console.log(data);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  search()
+
 })
