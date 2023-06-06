@@ -22,8 +22,10 @@ movieBtn.addEventListener('click', function (event) {
 
   async function search(movie) {
     try {
-      const request = await fetch(`https://api.themoviedb.org/3/movie/11?api_key=${apiKey}`);
+      const request = await fetch(`https://api.themoviedb.org/3/search/movie?query=${movie}&api_key=${apiKey}`);
       const data = await request.json();
+
+      // ojo que devuelve 20 resultados de el titpulo de la search movie
 
       console.log(data);
       
@@ -32,6 +34,6 @@ movieBtn.addEventListener('click', function (event) {
     }
   }
 
-  search()
+  search(input.value)
 
 })
