@@ -15,3 +15,22 @@ body{
   width: 100vw;
   height: 100vh;
 }
+
+body p{
+  text-align: center;
+}
+
+input, button{
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+button{
+  background-color: rgb(55, 133, 182);
+  color: aliceblue;
+}
+button:hover, button:focus{
+  background-color: rgb(36, 101, 142);
+  color: aliceblue;
+}
