@@ -1,5 +1,5 @@
 import './style.css';
-import { pokemon } from './pokemon.js';
+//import { pokemon } from './pokemon.js';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -18,8 +18,17 @@ const pokeSearch = document.querySelector('.pokeSearch');
 pokeSearch.addEventListener('click', function (event) {
   event.preventDefault();
 
-  // look the poke api documentation to search a pokemon and print her img into a new div
+  async function pokemon(name) {
 
-  console.log(input.value);
-  input.value = '';
+    try {
+        const request = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`);
+        const data = await request.json();
+
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+  pokemon(input.value);
 })

@@ -1,6 +1,11 @@
-export function pokemon(params) {
+export async function pokemon(name) {
 
-    
-    console.log('pokemon function');
-    // try catch ...
+    try {
+        const request = await fatch(`https://pokeapi.co/api/v2/ability/${name}/`);
+        const data = await request.json();
+
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
 };
