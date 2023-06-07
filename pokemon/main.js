@@ -1,8 +1,6 @@
 import './style.css';
 import { pokemon } from './pokemon.js'
 
-pokemon();
-
 document.querySelector('#app').innerHTML = `
   <div>
     <p class="read-the-docs">
