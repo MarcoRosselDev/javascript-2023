@@ -9,6 +9,7 @@ document.querySelector('#app').innerHTML = `
       <input type="text">
       <button class="pokeSearch">Search</button>
     </form>
+    <div class="pokeDiv"></div>
   </div>
 `;
 
