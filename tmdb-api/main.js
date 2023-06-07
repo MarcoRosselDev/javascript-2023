@@ -25,7 +25,7 @@ movieBtn.addEventListener('click', function (event) {
       const request = await fetch(`https://api.themoviedb.org/3/search/movie?query=${movie}&api_key=${apiKey}`);
       const data = await request.json();
 
-      // ojo que devuelve 20 resultados de el titpulo de la search movie
+      // ojo que devuelve 20 resultados de el titpulo de la search movie  
 
       console.log(data);
       
