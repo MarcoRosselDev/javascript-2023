@@ -12,6 +12,7 @@ export async function pokemon(name) {
         <img src="${data.sprites.other["official-artwork"].front_default}" alt="pokemon ${data.name}">
         <img src="${data.sprites.other["official-artwork"].front_shiny}" alt="pokemon ${data.name}">
         `
+        // add another try catch to ask if this pokemon have evolution or not
 
         console.log(data);
     } catch (error) {

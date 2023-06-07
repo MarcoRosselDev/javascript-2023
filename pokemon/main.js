@@ -19,6 +19,6 @@ const pokeSearch = document.querySelector('.pokeSearch');
 pokeSearch.addEventListener('click', function (event) {
   event.preventDefault();
 
-  // 
+  // look if we can add fetch into another fetch and import that.
   pokemon(input.value);
 })
