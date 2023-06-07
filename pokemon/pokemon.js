@@ -8,6 +8,9 @@ export async function pokemon(name) {
 
         pokeDiv.innerHTML = `
         <p>name : ${data.name}</p>
+        <img src="${data.sprites.front_default}" alt="pokemon ${data.name}">pokemon ${data.name}
+        <img src="${data.sprites.other["official-artwork"].front_default}" alt="pokemon ${data.name}">
+        <img src="${data.sprites.other["official-artwork"].front_shiny}" alt="pokemon ${data.name}">
         `
 
         console.log(data);

@@ -40,3 +40,13 @@ button {
   background-color: rgb(62, 105, 199);
   color: white;
 }
+
+.pokeDiv{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+img{
+  max-width: 200px;
+  max-height: 200px;
+}
